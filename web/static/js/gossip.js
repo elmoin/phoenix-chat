@@ -22,6 +22,7 @@ class Gossip {
     $input.off("keypress").on("keypress", e => { 
       if (e.keyCode == 13) { 
         chan.push("new:msg", {user: $username.val(), body: $input.val()}, 10000) 
+        console.log($username.val(), $input.val())
         $input.val("") 
       } 
     }) 
@@ -42,6 +43,7 @@ class Gossip {
   } 
   
   static messageTemplate(msg){ 
+    console.log("incoming: ", msg)
     let username = this.sanitize(msg.user || "anonymous") 
     let body = this.sanitize(msg.body) 
     
