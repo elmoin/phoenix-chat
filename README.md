@@ -1,4 +1,4 @@
-# Execercises (Elmoin Meetup August 2016)
+# Execercises (Elmoin Meetup September 2016)
 
 We'll look at a simple chat application written in Elixir/Phoenix and replace the existing JavaScript-Code with Elm. 
 
